@@ -1,0 +1,83 @@
+.influencerstxt {
+  color: var(--secondary-color);
+  font-family: "editorial", sans-serif;
+  font-style: italic;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  align-self: start;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.influencers {
+  /* border: solid 2px var(--secondary-color); */
+  display: grid;
+  grid-template-rows: auto;
+  gap: 20px;
+}
+.influencer {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  text-align: left;
+  border-bottom: solid 1px var(--secondary-color);
+  padding-bottom: 10px;
+  width: 100%;
+  gap: 8%;
+}
+.influencer:last-child {
+  border-bottom: none;
+}
+.infcontacts,
+.infcategory,
+.infabout,
+.price {
+  width: 10%;
+  color: var(--secondary-color);
+}
+.price {
+  margin-right: 10%;
+  font-family: "editorial";
+  font-size: 15px;
+}
+.infimg img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+  filter: sepia(0.2) saturate(2) hue-rotate(1deg) brightness(1.3);
+}
+.infcontacts h1 {
+  font-family: "InterTight";
+  font-weight: bolder;
+}
+.infcontacts p {
+  font-family: "editorial", sans-serif;
+  font-size: 15px;
+  /* font-style: italic; */
+}
+.infcategory p {
+  font-family: "editorial", sans-serif;
+  font-size: 15px;
+  /* font-style: italic; */
+}
+.infabout p {
+  font-family: "InterTight";
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 500;
+  /* font-style: italic; */
+}
+.seeMore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 2rem;
+}
+.seeMore h1 {
+  font-size: 42px;
+  font-style: underline;
+  color: var(--secondary-color);
+  font-family: "InterTight";
+  font-weight: bold;
+}
