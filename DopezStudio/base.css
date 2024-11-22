@@ -492,18 +492,18 @@ button {
   line-height: 1;
   padding-bottom: 20px;
 }
-.logo p {
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "InterTight", sans-serif;
+  font-weight: bolder;
+  font-size: 132px;
   color: var(--secondary-color);
-  font-family: "InterTight";
-  font-weight: bold;
-  font-size: 144px;
   line-height: 1;
   padding-bottom: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bolder;
 }
+
 .current {
   text-decoration: underline;
 }

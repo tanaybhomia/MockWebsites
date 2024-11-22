@@ -1,0 +1,238 @@
+.herosection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  /* border: solid 2px var(--secondary-color); */
+}
+.projectcontentsection {
+  display: flex;
+  gap: 20px;
+  color: var(--secondary-color);
+  font-family: "editorial";
+  font-size: 16px;
+}
+.projectnamesection {
+  font-size: 100px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-right: 20%;
+  margin-left: 20%;
+}
+.projectnamesection .brand {
+  color: var(--secondary-color);
+  font-family: "InterTight", sans-serif;
+  font-weight: bold;
+  /* justify-content: baseline; */
+}
+.projectnamesection .person {
+  color: var(--secondary-color);
+  font-family: "editorial";
+  font-style: italic;
+  /* justify-content: baseline; */
+}
+.projectabout {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  /* border: solid 2px var(--secondary-color); */
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Two columns */
+  grid-template-rows: auto auto; /* Two rows */
+  gap: 40px; /* Space between grid items */
+}
+.side {
+  color: var(--secondary-color);
+  font-family: "editorial";
+  font-style: italic;
+  font-size: 16px;
+}
+.backgrounds {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1;
+  color: var(--secondary-color);
+  font-family: "InterTight";
+}
+.productions {
+  font-size: 16px;
+  color: var(--secondary-color);
+  font-family: "InterTight";
+}
+.projectimg {
+  filter: sepia(0.2) saturate(1.5) hue-rotate(1deg) brightness(1.3);
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.projectimg img {
+  object-fit: cover;
+  width: 100%;
+  height: 650px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.videoshooting {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  height: 700px;
+  max-height: 700px;
+  overflow: hidden;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+.videoshooting p {
+  color: var(--secondary-color);
+  font-family: "editorial";
+  font-size: 16px;
+  font-style: italic;
+}
+.shootingcontent {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+  height: 100%;
+  max-height: 100%;
+  overflow: hidden;
+}
+.shootingcontent p {
+  font-family: "InterTight";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1;
+}
+.shootingmainimg img {
+  height: 100%;
+  border-radius: 10px;
+  filter: sepia(0.2) saturate(1.5) hue-rotate(1deg) brightness(1.3);
+}
+.collageimg {
+  display: grid;
+  grid-template-rows: 1.5fr 2fr;
+  gap: 40px;
+  object-fit: contain;
+  height: 100%;
+  max-height: 100%;
+  overflow: hidden;
+}
+.collageimg img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  filter: sepia(0.2) saturate(2) hue-rotate(1deg) brightness(1.3);
+}
+.postproduction {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  /* border: solid 2px var(--secondary-color); */
+  gap: 40px;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+.postproductionside p {
+  color: var(--secondary-color);
+  font-family: "editorial";
+  font-style: italic;
+  font-size: 16px;
+}
+.postproductioncontent {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+}
+.postproductioncontent p {
+  font-family: "InterTight";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1;
+  color: var(--secondary-color);
+}
+.ads {
+  display: grid;
+  grid-template-columns: 2.2fr 0.6fr;
+  /* border: solid 2px var(--secondary-color); */
+  gap: 40px;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+.adsimage img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  filter: sepia(0.2) saturate(2) hue-rotate(1deg) brightness(1.3);
+}
+.adscontent p {
+  font-family: "InterTight";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1;
+  color: var(--secondary-color);
+}
+.outcome {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+.outcomeside p {
+  color: var(--secondary-color);
+  font-family: "editorial";
+  font-family: 16px;
+  font-style: italic;
+}
+.outcomecontent p {
+  font-family: "InterTight";
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 1;
+  color: var(--secondary-color);
+}
+.projectsdisplay {
+  display: grid;
+  margin: 3rem 0;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr
+  gap: 10px;
+  margin: 2rem 0;
+}
+
+.projectpanel {
+  display: grid;
+  grid-template-columns: 3fr 4fr 1fr; /* Adjust for name, coverage, and image */
+  align-items: center; /* Center content vertically */
+  border-bottom: 1px solid var(--secondary-color); /* Divider between rows */
+  padding: 10px 0;
+}
+
+.projectname p {
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+  margin: 0;
+}
+
+.projectcoverage {
+  display: flex;
+  gap: 20px;
+  justify-content: start;
+  font-size: 1rem;
+}
+
+.influencerimg {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.influencerimg img {
+  height: 80px; /* Adjust size as needed */
+  width: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+  filter: sepia(0.2) saturate(2) hue-rotate(1deg) brightness(1.3);
+}

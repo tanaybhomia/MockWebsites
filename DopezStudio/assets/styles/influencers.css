@@ -72,11 +72,13 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 8rem;
+  /* font-style: underline; */
 }
 .seeMore h1 {
-  font-size: 42px;
-  font-style: underline;
+  font-size: 38px;
+  text-decoration: underline;
   color: var(--secondary-color);
   font-family: "InterTight";
   font-weight: bold;
