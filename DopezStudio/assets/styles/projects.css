@@ -64,3 +64,14 @@
   font-style: italic; /* Italic for stylistic effect */
   font-size: 29px; /* Slightly smaller size */
 }
+.seemore {
+  display: flex;
+  justify-content: center;
+}
+.seemore p {
+  color: var(--secondary-color);
+  font-family: "InterTight", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  text-decoration: underline;
+}
