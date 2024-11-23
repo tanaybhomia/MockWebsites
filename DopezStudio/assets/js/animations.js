@@ -161,8 +161,6 @@ gsap.from(".footer", {
 });
 
 // Animations for Influencers page
-// Register ScrollTrigger plugin
-gsap.registerPlugin(ScrollTrigger);
 
 // Influencers Text Animation
 gsap.from(".influencerstxt", {
@@ -283,3 +281,109 @@ footerTimeline
     },
     "-=0.5"
   );
+
+// Animations for the projects page
+
+// Projects Text Animation
+gsap.from(".projectstxt", {
+  opacity: 0,
+  y: 30,
+  duration: 1.2,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: ".projectstxt",
+    start: "top 80%",
+    end: "top 20%",
+    toggleActions: "play none none reverse",
+  },
+});
+
+// Projects Grid Animation
+gsap.from(".project", {
+  opacity: 0,
+  y: 50,
+  duration: 1,
+  stagger: 0.2,
+  ease: "power2.out",
+});
+
+// Individual Project Element Animations
+gsap.utils.toArray(".project").forEach((project) => {
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: project,
+      start: "top 90%",
+      end: "top 20%",
+      toggleActions: "play none none reverse",
+    },
+  });
+
+  tl.from(project.querySelector(".number"), {
+    opacity: 0,
+    x: -20,
+    duration: 0.6,
+    ease: "power2.out",
+  })
+    .from(
+      project.querySelector(".projectintro"),
+      {
+        opacity: 0,
+        y: 20,
+        duration: 0.6,
+        ease: "power2.out",
+      },
+      "-=0.4"
+    )
+    .from(
+      project.querySelector(".projectcontent"),
+      {
+        opacity: 0,
+        x: 20,
+        duration: 0.6,
+        ease: "power2.out",
+      },
+      "-=0.4"
+    )
+    .from(
+      project.querySelector(".projectimg"),
+      {
+        opacity: 0,
+        scale: 0.95,
+        duration: 0.8,
+        ease: "power2.out",
+      },
+      "-=0.4"
+    );
+});
+
+// Hover Animations for Projects
+gsap.utils.toArray(".project").forEach((project) => {
+  const projectImg = project.querySelector(".projectimg img");
+  const projectNumber = project.querySelector(".number");
+
+  project.addEventListener("mouseenter", () => {
+    gsap.to(projectImg, {
+      scale: 1.05,
+      duration: 0.4,
+      ease: "power2.out",
+    });
+    gsap.to(projectNumber, {
+      y: -5,
+      duration: 0.3,
+      ease: "power2.out",
+    });
+  });
+
+  project.addEventListener("mouseleave", () => {
+    gsap.to(projectImg, {
+      scale: 1,
+      duration: 0.4,
+      ease: "power2.in",
+    });
+    gsap.to(projectNumber, {
+      y: 0,
+      duration: 0.3,
+      ease: "power2.in",
+    });
+  });
+});
